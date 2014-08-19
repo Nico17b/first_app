@@ -1,0 +1,6 @@
+%h1 Listing des posts
+- @posts.each do |post|
+	%h3
+		= link_to post.title, post_path(post)
+		%small= post.created_at
+	%p= post.content
